@@ -38,7 +38,7 @@ module.exports = () => {
         publicPath: "/",
         icons: [
           {
-            src: path.resolve("src/assets/icon.png"),
+            src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join("assets", "icons"),
           },
@@ -55,7 +55,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          user: {
+          use: {
             loader: "babel-loader",
             options: {
               presets: ["@babel/present-env"],
