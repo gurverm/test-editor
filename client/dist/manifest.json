@@ -31,12 +31,12 @@
       "type": "image/png"
     }
   ],
-  "name": "Progressive Web Application",
-  "short_name": "PWA",
+  "name": "Just Another Text Editor",
+  "short_name": "JATE",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "/",
-  "description": "A simple PWA text editor",
-  "background_color": "#ffffff",
+  "description": "Take notes with JavaScript syntax highlighting",
+  "background_color": "#2196f3",
   "theme_color": "#2196f3"
 }
