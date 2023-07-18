@@ -13,11 +13,11 @@ const initdb = async () =>
   });
 
 // Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (title, body) => {
+export const putDb = async (content) => {
   const jateDb = await openDB("jate", 1);
   const tx = jateDb.transaction("jate", "readwrite");
   const store = tx.objectStore("jate");
-  const request = store.put({ title, body });
+  const request = store.put({ id: 1, value: content });
   const result = await request;
   console.log("putDb result", result);
   console.error("putDb not implemented");
